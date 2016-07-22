@@ -81,6 +81,9 @@ public class SelectResultActivity extends AppCompatActivity {
                 case 3:
                     textView.setText("Notification set for BE IT Engg");
                     break;
+                case 4:
+                    textView.setText("Notification set for BE ETRX Engg Sem-VII");
+                    break;
             }
         }
 
@@ -107,6 +110,9 @@ public class SelectResultActivity extends AppCompatActivity {
                     case 3:
                         textView.setText("Notification set for BE IT Engg");
                         break;
+                    case 4:
+                        textView.setText("Notification set for BE ETRX Engg Sem-VII");
+                        break;
                 }
 
                 Intent intent = new Intent(SelectResultActivity.this,ResultsNotificationService.class);
@@ -131,5 +137,6 @@ public class SelectResultActivity extends AppCompatActivity {
         arrayList.add("BE Electronics Engg Sem VIII");
         arrayList.add("BE Electronics and Telecommunication Engg Sem VIII");
         arrayList.add("BE Information Technology Engg Sem VIII");
+        arrayList.add("BE Electronics Engg Sem VII");
     }
 }

@@ -4,6 +4,7 @@
 
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,15 @@
         <service
             android:exported="true"
             android:name=".services.ResultsNotificationService"/>
+
+        <receiver
+            android:name=".receivers.BootCompletedAutoStarter"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

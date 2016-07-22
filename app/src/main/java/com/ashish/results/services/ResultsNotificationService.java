@@ -123,6 +123,12 @@ public class ResultsNotificationService extends Service {
                 } else {
                     return false;
                 }
+            case 4:
+                if(htmlContent.contains("ELECTRONICS ENGG SEM-VII")) {
+                    return true;
+                } else {
+                    return false;
+                }
             default:
                 return false;
         }
@@ -167,6 +173,15 @@ public class ResultsNotificationService extends Service {
                     case 1:
                         builder.setContentText("BE Electronics Engg");
                         break;
+                    case 2:
+                        builder.setContentText("BE EXTC Engg");
+                        break;
+                    case 3:
+                        builder.setContentText("BE IT Engg");
+                        break;
+                    case 4:
+                        builder.setContentText("BE Electronics Engg Sem-VII");
+                        break;
                 }
                 NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
                 notificationManager.notify(998,builder.build());
@@ -175,4 +190,10 @@ public class ResultsNotificationService extends Service {
         }
     }
 
+    @Override
+    public void onDestroy() {
+        Intent intent = new Intent(ResultsNotificationService.this,ResultsNotificationService.class);
+        startService(intent);
+        super.onDestroy();
+    }
 }
