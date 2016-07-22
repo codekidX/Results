@@ -38,7 +38,7 @@ limitations under the License.
 
     <TextView
         android:layout_below="@id/dev_by"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textColor="#6c6c6c"
         android:layout_marginTop="10dp"
         android:text="This app is open-source and licensed under Apache v2 "
