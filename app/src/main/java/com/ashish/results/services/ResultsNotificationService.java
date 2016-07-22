@@ -100,25 +100,25 @@ public class ResultsNotificationService extends Service {
 
         switch (stream) {
             case 0:
-                if(htmlContent.contains("COMPUTER ENGG SEM-VIII ")) {
+                if(htmlContent.contains("COMPUTER ENGG SEM-VIII ") || htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 1:
-                if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII")) {
+                if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII") || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 2:
-                if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII")) {
+                if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII") || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 3:
-                if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII")) {
+                if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII") || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
