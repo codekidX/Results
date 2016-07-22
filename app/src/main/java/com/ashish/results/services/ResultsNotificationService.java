@@ -23,6 +23,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.IBinder;
 import android.os.SystemClock;
@@ -142,6 +143,10 @@ public class ResultsNotificationService extends Service {
         @Override
         protected Boolean doInBackground(Void... voids) {
 
+            Intent intentForPending = new Intent(Intent.ACTION_VIEW);
+            intentForPending.setData(Uri.parse(sharedPreferences.getString("mu","")));
+            PendingIntent pendingIntent;
+            pendingIntent = PendingIntent.getActivity(context,0,intentForPending,0);
 
             try {
                 available = isResultAvailable(stream);
@@ -153,7 +158,8 @@ public class ResultsNotificationService extends Service {
             if (available) {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
                 builder.setContentTitle("Results Declared!!")
-                        .setSmallIcon(R.drawable.gavel);
+                        .setSmallIcon(R.drawable.gavel)
+                        .setContentIntent(pendingIntent);
                 switch (stream) {
                     case 0:
                         builder.setContentText("BE Computer Engg");
