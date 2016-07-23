@@ -104,7 +104,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
-                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE SEM -VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
@@ -114,7 +118,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
-                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE SEM -VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
@@ -124,7 +132,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
-                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE SEM -VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
@@ -134,7 +146,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
-                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE SEM -VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM -VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
@@ -150,7 +166,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")
+                        || htmlContent.contains("BE SEM -VIII (OLD)")
+                        || htmlContent.contains("B.E SEM -VIII (OLD)")
+                        || htmlContent.contains("BE (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
@@ -160,7 +180,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")
+                        || htmlContent.contains("BE SEM -VIII (OLD)")
+                        || htmlContent.contains("B.E SEM -VIII (OLD)")
+                        || htmlContent.contains("BE (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
@@ -170,7 +194,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")
+                        || htmlContent.contains("BE SEM -VIII (OLD)")
+                        || htmlContent.contains("B.E SEM -VIII (OLD)")
+                        || htmlContent.contains("BE (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
@@ -180,7 +208,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")
+                        || htmlContent.contains("BE SEM -VIII (OLD)")
+                        || htmlContent.contains("B.E SEM -VIII (OLD)")
+                        || htmlContent.contains("BE (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
