@@ -17,8 +17,10 @@ limitations under the License.
 * */
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetDialogFragment;
 import android.view.LayoutInflater;
@@ -38,6 +40,7 @@ public class InfoBottomSheet extends BottomSheetDialogFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.info_bottom_sheet_layout,container,false);
         Button gotoSource = (Button) v.findViewById(R.id.goto_source);
+        Button disableButton = (Button) v.findViewById(R.id.disable_notification);
 
         gotoSource.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +48,18 @@ public class InfoBottomSheet extends BottomSheetDialogFragment {
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://github.com/codekidX/Results"));
                 startActivity(intent);
+            }
+        });
+
+        disableButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity().getApplicationContext());
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("which-stream",99);
+                editor.apply();
+                InfoBottomSheet.this.dismiss();
+                getActivity().recreate();
             }
         });
 

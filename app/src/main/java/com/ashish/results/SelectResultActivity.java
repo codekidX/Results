@@ -96,6 +96,9 @@ public class SelectResultActivity extends AppCompatActivity {
                 case 8:
                     textView.setText("Notification set for BE IT Engg (OLD)" );
                     break;
+                case 99:
+                    textView.setText("DISABLED" );
+                    break;
             }
         }
 

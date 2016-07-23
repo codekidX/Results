@@ -57,6 +57,16 @@ limitations under the License.
         android:text="View Source"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/disable_notification"
+        android:text="Disable"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
