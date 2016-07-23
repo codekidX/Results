@@ -41,7 +41,7 @@ limitations under the License.
         android:textSize="16sp"
         android:textColor="#6c6c6c"
         android:layout_marginTop="10dp"
-        android:text="This app is open-source and doesn't have any conclusive evidence that it'll work. But, it's better to have something right? \n\n FYI, try selecting Sem-VII (REV) and check if it notifies! "
+        android:text="This app is open-source and doesn't have any conclusive evidence that it'll work(unless MU does not make any speling mistakes). But, it's better to have something right? \n\n FYI, try selecting Sem-VII (REV) and check if it notifies! "
         android:layout_marginLeft="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
