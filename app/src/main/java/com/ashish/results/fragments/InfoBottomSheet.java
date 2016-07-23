@@ -29,6 +29,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.ashish.results.R;
+import com.ashish.results.services.ResultsNotificationService;
 
 /**
  * Created by snowpuppet on 22/07/16.
@@ -58,6 +59,9 @@ public class InfoBottomSheet extends BottomSheetDialogFragment {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putInt("which-stream",99);
                 editor.apply();
+                Intent intent = new Intent(getActivity(),ResultsNotificationService.class);
+                getActivity().startService(intent);
+
                 InfoBottomSheet.this.dismiss();
                 getActivity().recreate();
             }
