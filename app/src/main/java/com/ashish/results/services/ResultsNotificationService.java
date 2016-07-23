@@ -100,31 +100,87 @@ public class ResultsNotificationService extends Service {
 
         switch (stream) {
             case 0:
-                if(htmlContent.contains("COMPUTER ENGG SEM-VIII ") || htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")) {
+                if(htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 1:
-                if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII") || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")) {
+                if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 2:
-                if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII") || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS)")) {
+                if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 3:
-                if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII") || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")) {
+                if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. SEM -VIII (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 4:
                 if(htmlContent.contains("ELECTRONICS ENGG SEM-VII")) {
+                    return true;
+                } else {
+                    return false;
+                }
+            case 5:
+                if(htmlContent.contains("COMPUTER ENGG SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                    return true;
+                } else {
+                    return false;
+                }
+            case 6:
+                if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                    return true;
+                } else {
+                    return false;
+                }
+            case 7:
+                if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
+                    return true;
+                } else {
+                    return false;
+                }
+            case 8:
+                if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. SEM -VIII (OLD)")) {
                     return true;
                 } else {
                     return false;
@@ -168,19 +224,31 @@ public class ResultsNotificationService extends Service {
                         .setContentIntent(pendingIntent);
                 switch (stream) {
                     case 0:
-                        builder.setContentText("BE Computer Engg");
+                        builder.setContentText("BE Computer Engg (CBGS)");
                         break;
                     case 1:
-                        builder.setContentText("BE Electronics Engg");
+                        builder.setContentText("BE Electronics Engg (CBGS)");
                         break;
                     case 2:
-                        builder.setContentText("BE EXTC Engg");
+                        builder.setContentText("BE EXTC Engg (CBGS)");
                         break;
                     case 3:
-                        builder.setContentText("BE IT Engg");
+                        builder.setContentText("BE IT Engg (CBGS)");
                         break;
                     case 4:
-                        builder.setContentText("BE Electronics Engg Sem-VII");
+                        builder.setContentText("BE Electronics Engg Sem-VII (CBGS)");
+                        break;
+                    case 5:
+                        builder.setContentText("BE Computer Engg (OLD)");
+                        break;
+                    case 6:
+                        builder.setContentText("BE Electronics Engg (OLD)");
+                        break;
+                    case 7:
+                        builder.setContentText("BE EXTC Engg (OLD)");
+                        break;
+                    case 8:
+                        builder.setContentText("BE IT Engg (OLD)");
                         break;
                 }
                 NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);

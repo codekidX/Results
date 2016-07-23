@@ -84,6 +84,18 @@ public class SelectResultActivity extends AppCompatActivity {
                 case 4:
                     textView.setText("Notification set for BE ETRX Engg Sem-VII");
                     break;
+                case 5:
+                    textView.setText("Notification set for BE COMPS Engg (OLD)");
+                    break;
+                case 6:
+                    textView.setText("Notification set for BE ETRX Engg (OLD)");
+                    break;
+                case 7:
+                    textView.setText("Notification set for BE EXTC Engg (OLD)");
+                    break;
+                case 8:
+                    textView.setText("Notification set for BE IT Engg (OLD)" );
+                    break;
             }
         }
 
@@ -99,19 +111,31 @@ public class SelectResultActivity extends AppCompatActivity {
 
                 switch (i) {
                     case 0:
-                        textView.setText("Notification set for BE COMPS Engg");
+                        textView.setText("Notification set for BE COMPS Engg (CBGS)");
                         break;
                     case 1:
-                        textView.setText("Notification set for BE ETRX Engg");
+                        textView.setText("Notification set for BE ETRX Engg (CBGS)");
                         break;
                     case 2:
-                        textView.setText("Notification set for BE EXTC Engg");
+                        textView.setText("Notification set for BE EXTC Engg (CBGS)");
                         break;
                     case 3:
-                        textView.setText("Notification set for BE IT Engg");
+                        textView.setText("Notification set for BE IT Engg (CBGS)" );
                         break;
                     case 4:
-                        textView.setText("Notification set for BE ETRX Engg Sem-VII");
+                        textView.setText("Notification set for BE ETRX Engg Sem-VII (REV)");
+                        break;
+                    case 5:
+                        textView.setText("Notification set for BE COMPS Engg (OLD)");
+                        break;
+                    case 6:
+                        textView.setText("Notification set for BE ETRX Engg (OLD)");
+                        break;
+                    case 7:
+                        textView.setText("Notification set for BE EXTC Engg (OLD)");
+                        break;
+                    case 8:
+                        textView.setText("Notification set for BE IT Engg (OLD)" );
                         break;
                 }
 
@@ -133,10 +157,15 @@ public class SelectResultActivity extends AppCompatActivity {
 
 
     private void populateStreams() {
-        arrayList.add("BE Computer Engg Sem VIII");
-        arrayList.add("BE Electronics Engg Sem VIII");
-        arrayList.add("BE Electronics and Telecommunication Engg Sem VIII");
-        arrayList.add("BE Information Technology Engg Sem VIII");
-        arrayList.add("BE Electronics Engg Sem VII");
+        arrayList.add("- BE Computer Engg Sem VIII (CBGS)");
+        arrayList.add("- BE Electronics Engg Sem VIII (CBGS)");
+        arrayList.add("- BE Electronics and Telecommunication Engg Sem VIII (CBGS)");
+        arrayList.add("- BE Information Technology Engg Sem VIII (CBGS)");
+        arrayList.add("- BE Electronics Engg Sem VII (REV)");
+        //old syllabus
+        arrayList.add("- BE Computer Engg Sem VIII (OLD)");
+        arrayList.add("- BE Electronics Engg Sem VIII (OLD)");
+        arrayList.add("- BE Electronics and Telecommunication Engg Sem VIII (OLD)");
+        arrayList.add("- BE Information Technology Engg Sem VIII (OLD)");
     }
 }
