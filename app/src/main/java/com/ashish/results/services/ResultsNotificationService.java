@@ -101,56 +101,87 @@ public class ResultsNotificationService extends Service {
         switch (stream) {
             case 0:
                 if(htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")
+                        || htmlContent.contains("COMPUTER ENGG SEM-VIII (Cbgs.)")
+                        || htmlContent.contains("COMPUTER ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs.)")
                         || htmlContent.contains("B.E. SEM -VIII (CBGS)")
                         || htmlContent.contains("BE SEM -VIII (CBGS)")
                         || htmlContent.contains("B.E SEM -VIII (CBGS)")
                         || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("BE SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM-VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 1:
                 if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")
+                        || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Cbgs.)")
+                        || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs.)")
                         || htmlContent.contains("B.E. SEM -VIII (CBGS)")
                         || htmlContent.contains("BE SEM -VIII (CBGS)")
                         || htmlContent.contains("B.E SEM -VIII (CBGS)")
                         || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("BE SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM-VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E. ELECTRONICS ENGG. (Sem.-VIII)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 2:
                 if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS)")
+                        || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Cbgs.)")
+                        || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs.)")
                         || htmlContent.contains("B.E. SEM -VIII (CBGS)")
                         || htmlContent.contains("BE SEM -VIII (CBGS)")
                         || htmlContent.contains("B.E SEM -VIII (CBGS)")
                         || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("BE SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM-VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E. ELECTRONICS & TELE. COMM ENGG. (Sem.-VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 3:
                 if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")
+                        || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs.)")
+                        || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Cbgs.)")
                         || htmlContent.contains("B.E. SEM -VIII (CBGS)")
                         || htmlContent.contains("BE SEM -VIII (CBGS)")
                         || htmlContent.contains("B.E SEM -VIII (CBGS)")
                         || htmlContent.contains("BE (Sem.-VIII) (CBGS)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (CBGS)")
+                        || htmlContent.contains("BE SEM-VIII (CBGS)")
+                        || htmlContent.contains("B.E SEM-VIII (CBGS)")
+                        || htmlContent.contains("BE (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (CBGS)")
+                        || htmlContent.contains("B.E. INFORMATION TECHNOLOGY (Sem.-VIII) (CBGS)")) {
                     return true;
                 } else {
                     return false;
@@ -163,9 +194,11 @@ public class ResultsNotificationService extends Service {
                 }
             case 5:
                 if(htmlContent.contains("COMPUTER ENGG SEM-VIII (OLD)")
+                        || htmlContent.contains("COMPUTER ENGG SEM-VIII (Old.)")
+                        || htmlContent.contains("COMPUTER ENGG SEM-VIII (Old)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Old.)")
                         || htmlContent.contains("B.E. SEM -VIII (OLD)")
                         || htmlContent.contains("BE SEM -VIII (OLD)")
                         || htmlContent.contains("B.E SEM -VIII (OLD)")
@@ -177,34 +210,48 @@ public class ResultsNotificationService extends Service {
                 }
             case 6:
                 if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII (OLD)")
+                        || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Old.)")
+                        || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Old)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Old.)")
                         || htmlContent.contains("B.E. SEM -VIII (OLD)")
                         || htmlContent.contains("BE SEM -VIII (OLD)")
                         || htmlContent.contains("B.E SEM -VIII (OLD)")
                         || htmlContent.contains("BE (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("BE SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E SEM-VIII (OLD)")
+                        || htmlContent.contains("BE (Sem. -VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 7:
                 if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (OLD)")
+                        || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Old.)")
+                        || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Old)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
-                        || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("B.E. (Sem.-VIII) (Old.)")
                         || htmlContent.contains("B.E. SEM -VIII (OLD)")
                         || htmlContent.contains("BE SEM -VIII (OLD)")
                         || htmlContent.contains("B.E SEM -VIII (OLD)")
                         || htmlContent.contains("BE (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("BE SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E SEM-VIII (OLD)")
+                        || htmlContent.contains("BE (Sem. -VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
                 }
             case 8:
                 if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (OLD)")
+                        || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Old.)")
+                        || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Old)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD")
                         || htmlContent.contains("B.E. (Sem.-VIII) (OLD)")
@@ -212,7 +259,11 @@ public class ResultsNotificationService extends Service {
                         || htmlContent.contains("BE SEM -VIII (OLD)")
                         || htmlContent.contains("B.E SEM -VIII (OLD)")
                         || htmlContent.contains("BE (Sem.-VIII) (OLD)")
-                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")) {
+                        || htmlContent.contains("B.E (Sem.-VIII) (OLD)")
+                        || htmlContent.contains("BE SEM-VIII (OLD)")
+                        || htmlContent.contains("B.E SEM-VIII (OLD)")
+                        || htmlContent.contains("BE (Sem. -VIII) (OLD)")
+                        || htmlContent.contains("B.E (Sem. -VIII) (OLD)")) {
                     return true;
                 } else {
                     return false;
