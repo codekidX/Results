@@ -236,7 +236,7 @@ public class ResultsNotificationService extends Service {
                         builder.setContentText("BE IT Engg (CBGS)");
                         break;
                     case 4:
-                        builder.setContentText("BE Electronics Engg Sem-VII (CBGS)");
+                        builder.setContentText("BE Electronics Engg Sem-VII (REV)");
                         break;
                     case 5:
                         builder.setContentText("BE Computer Engg (OLD)");
