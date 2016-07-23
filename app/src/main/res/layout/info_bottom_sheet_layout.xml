@@ -41,7 +41,7 @@ limitations under the License.
         android:textSize="16sp"
         android:textColor="#6c6c6c"
         android:layout_marginTop="10dp"
-        android:text="This app is open-source and licensed under Apache v2 "
+        android:text="This app is open-source and doesn't have any conclusive evidence that it'll work. But, it's better to have something right? "
         android:layout_marginLeft="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
