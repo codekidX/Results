@@ -20,6 +20,7 @@ limitations under the License.
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ececec"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.ashish.results.SelectResultActivity"
     tools:showIn="@layout/activity_select_result">

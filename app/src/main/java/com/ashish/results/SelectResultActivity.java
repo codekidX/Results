@@ -160,15 +160,15 @@ public class SelectResultActivity extends AppCompatActivity {
 
 
     private void populateStreams() {
-        arrayList.add("- BE Computer Engg Sem VIII (CBGS)");
-        arrayList.add("- BE Electronics Engg Sem VIII (CBGS)");
-        arrayList.add("- BE Electronics and Telecommunication Engg Sem VIII (CBGS)");
-        arrayList.add("- BE Information Technology Engg Sem VIII (CBGS)");
-        arrayList.add("- BE Electronics Engg Sem VII (REV)");
+        arrayList.add("BE Computer Engg Sem VIII (CBGS)");
+        arrayList.add("BE Electronics Engg Sem VIII (CBGS)");
+        arrayList.add("BE Electronics and Telecommunication Engg Sem VIII (CBGS)");
+        arrayList.add("BE Information Technology Engg Sem VIII (CBGS)");
+        arrayList.add("BE Electronics Engg Sem VII (REV)");
         //old syllabus
-        arrayList.add("- BE Computer Engg Sem VIII (OLD)");
-        arrayList.add("- BE Electronics Engg Sem VIII (OLD)");
-        arrayList.add("- BE Electronics and Telecommunication Engg Sem VIII (OLD)");
-        arrayList.add("- BE Information Technology Engg Sem VIII (OLD)");
+        arrayList.add("BE Computer Engg Sem VIII (OLD)");
+        arrayList.add("BE Electronics Engg Sem VIII (OLD)");
+        arrayList.add("BE Electronics and Telecommunication Engg Sem VIII (OLD)");
+        arrayList.add("BE Information Technology Engg Sem VIII (OLD)");
     }
 }
