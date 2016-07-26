@@ -186,7 +186,7 @@ public class ResultsNotificationService extends Service {
                 if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")
                         || htmlContent.contains("(SEM VIII) (CBGS)")
                         || htmlContent.contains("(SEM VIII) (CBSGS)")
-                        || htmlContent.contains("SEM VIII (CBserviceGS)")
+                        || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("SEM VIII (CBSGS)")
                         || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs.)")
                         || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs)")
