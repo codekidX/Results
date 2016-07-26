@@ -105,10 +105,15 @@ public class ResultsNotificationService extends Service {
         switch (stream) {
             case 0:
                 if(htmlContent.contains("B.E.DEGREE(Computer Engg.) (SEM VIII) (CBGS)")
+                        || htmlContent.contains("B.E.DEGREE(Computer Engg.) (SEM VIII) (CBGS COURSE)")
                         || htmlContent.contains("(SEM VIII) (CBGS)")
                         || htmlContent.contains("(SEM VIII) (CBSGS)")
                         || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("SEM VIII (CBSGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS COURSE)")
+                        || htmlContent.contains("(SEM VIII) (CBSGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBSGS COURSE)")
                         || htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")
                         || htmlContent.contains("COMPUTER ENGG SEM-VIII (Cbgs.)")
                         || htmlContent.contains("COMPUTER ENGG SEM-VIII (Cbgs)")
@@ -131,10 +136,15 @@ public class ResultsNotificationService extends Service {
                 }
             case 1:
                 if(htmlContent.contains("B.E.DEGREE(Electronics Engg.) (SEM VIII) (CBGS)")
+                        || htmlContent.contains("B.E.DEGREE(Electronics Engg.) (SEM VIII) (CBGS COURSE)")
                         || htmlContent.contains("(SEM VIII) (CBGS)")
                         || htmlContent.contains("(SEM VIII) (CBSGS)")
                         || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("SEM VIII (CBSGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS COURSE)")
+                        || htmlContent.contains("(SEM VIII) (CBSGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBSGS COURSE)")
                         || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")
                         || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Cbgs.)")
                         || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Cbgs)")
@@ -158,10 +168,15 @@ public class ResultsNotificationService extends Service {
                 }
             case 2:
                 if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS)")
+                        || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS COURSE)")
                         || htmlContent.contains("(SEM VIII) (CBGS)")
                         || htmlContent.contains("(SEM VIII) (CBSGS)")
                         || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("SEM VIII (CBSGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS COURSE)")
+                        || htmlContent.contains("(SEM VIII) (CBSGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBSGS COURSE)")
                         || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Cbgs.)")
                         || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
@@ -184,10 +199,15 @@ public class ResultsNotificationService extends Service {
                 }
             case 3:
                 if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")
+                        || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS COURSE)")
                         || htmlContent.contains("(SEM VIII) (CBGS)")
                         || htmlContent.contains("(SEM VIII) (CBSGS)")
                         || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("SEM VIII (CBSGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS COURSE)")
+                        || htmlContent.contains("(SEM VIII) (CBSGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBGS COURSE)")
+                        || htmlContent.contains("SEM VIII (CBSGS COURSE)")
                         || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs.)")
                         || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
