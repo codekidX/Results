@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ashish.results">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
@@ -24,17 +23,26 @@
         </activity>
 
         <service
-            android:exported="true"
-            android:name=".services.ResultsNotificationService"/>
+            android:name=".services.ResultsNotificationService"
+            android:exported="true" />
 
         <receiver
             android:name=".receivers.BootCompletedAutoStarter"
             android:enabled="true"
-            android:exported="false" >
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".SelectResultActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ashish.results.SelectResultActivity" />
+        </activity>
     </application>
 
 </manifest>

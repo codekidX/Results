@@ -29,6 +29,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.ashish.results.R;
+import com.ashish.results.SettingsActivity;
 import com.ashish.results.services.ResultsNotificationService;
 
 /**
@@ -42,6 +43,7 @@ public class InfoBottomSheet extends BottomSheetDialogFragment {
         View v = inflater.inflate(R.layout.info_bottom_sheet_layout,container,false);
         Button gotoSource = (Button) v.findViewById(R.id.goto_source);
         Button disableButton = (Button) v.findViewById(R.id.disable_notification);
+        Button settings = (Button) v.findViewById(R.id.settings);
 
         gotoSource.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +66,14 @@ public class InfoBottomSheet extends BottomSheetDialogFragment {
 
                 InfoBottomSheet.this.dismiss();
                 getActivity().recreate();
+            }
+        });
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getActivity(), SettingsActivity.class);
+                startActivity(i);
             }
         });
 

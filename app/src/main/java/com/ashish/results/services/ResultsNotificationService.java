@@ -70,6 +70,10 @@ public class ResultsNotificationService extends Service {
         ResultAsync resultAsync = new ResultAsync(sharedPreferences.getInt("which-stream",0),getApplicationContext());
         resultAsync.execute();
 
+        String timeString = sharedPreferences.getString("sync_frequency","");
+
+        int timeToCheck = Integer.parseInt(timeString);
+
         AlarmManager alarmMgr;
         PendingIntent alarmIntent;
 
@@ -78,8 +82,8 @@ public class ResultsNotificationService extends Service {
         alarmIntent = PendingIntent.getService(getApplicationContext(),0,i,0);
 
         alarmMgr.setInexactRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-                        60 * 1000,SystemClock.elapsedRealtime() +
-                        60 * 1000, alarmIntent);
+                        timeToCheck * 60 * 1000,SystemClock.elapsedRealtime() +
+                        timeToCheck * 60 * 1000, alarmIntent);
 
 
         return START_STICKY;
@@ -100,7 +104,10 @@ public class ResultsNotificationService extends Service {
 
         switch (stream) {
             case 0:
-                if(htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")
+                if(htmlContent.contains("B.E.DEGREE(Computer Engg.) (SEM VIII) (CBGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS)")
+                        || htmlContent.contains("SEM VIII (CBGS)")
+                        || htmlContent.contains("COMPUTER ENGG SEM-VIII (CBGS)")
                         || htmlContent.contains("COMPUTER ENGG SEM-VIII (Cbgs.)")
                         || htmlContent.contains("COMPUTER ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
@@ -121,7 +128,10 @@ public class ResultsNotificationService extends Service {
                     return false;
                 }
             case 1:
-                if(htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")
+                if(htmlContent.contains("B.E.DEGREE(Electronics Engg.) (SEM VIII) (CBGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS)")
+                        || htmlContent.contains("SEM VIII (CBGS)")
+                        || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (CBSGS)")
                         || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Cbgs.)")
                         || htmlContent.contains("ELECTRONICS ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
@@ -144,6 +154,8 @@ public class ResultsNotificationService extends Service {
                 }
             case 2:
                 if(htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (CBGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS)")
+                        || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Cbgs.)")
                         || htmlContent.contains("ELECTRONICS AND TELECOMMUNICATION ENGG SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
@@ -166,6 +178,8 @@ public class ResultsNotificationService extends Service {
                 }
             case 3:
                 if(htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (CBGS)")
+                        || htmlContent.contains("(SEM VIII) (CBGS)")
+                        || htmlContent.contains("SEM VIII (CBGS)")
                         || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs.)")
                         || htmlContent.contains("INFORMATION TECHNOLOGY SEM-VIII (Cbgs)")
                         || htmlContent.contains("B.E. (Sem.-VIII) (CBSGS)")
@@ -343,8 +357,6 @@ public class ResultsNotificationService extends Service {
 
     @Override
     public void onDestroy() {
-        Intent intent = new Intent(ResultsNotificationService.this,ResultsNotificationService.class);
-        startService(intent);
         super.onDestroy();
     }
 }

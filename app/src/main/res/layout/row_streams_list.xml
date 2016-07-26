@@ -30,32 +30,22 @@ limitations under the License.
         android:layout_marginBottom="2dp"
         app:cardElevation="0dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="60dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/stream_icon"
-            android:src="@drawable/streams"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp" />
 
             <TextView
                 android:textSize="16sp"
                 android:textColor="#4c4c4c"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_toEndOf="@+id/stream_icon"
                 android:layout_centerVertical="true"
                 android:id="@+id/stream_title"
                 android:fontFamily="sans-serif-condensed"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/stream_icon" />
+                android:layout_height="wrap_content" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 

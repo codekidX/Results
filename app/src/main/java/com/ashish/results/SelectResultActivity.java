@@ -61,6 +61,9 @@ public class SelectResultActivity extends AppCompatActivity {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         ed = sharedPreferences.edit();
         ed.putString("mu", MU_URL);
+        if(!sharedPreferences.contains("sync_frequency")) {
+            ed.putString("sync_frequency", "15");
+        }
         ed.apply();
 
         listView = (ListView) findViewById(R.id.streams_list);
